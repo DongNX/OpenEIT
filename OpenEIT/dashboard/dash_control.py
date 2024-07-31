@@ -211,7 +211,7 @@ class runGui(object):
                     return csv_string  
   
         # Switch to False    
-        self.app.run_server(debug=self.debug)
+        self.app.run_server(debug=self.debug, host='0.0.0.0')
 
     def on_connection_state_changed(self, connected):
         if connected:
